@@ -1,7 +1,8 @@
-import 'package:flutter_demo/generated/l10n.dart';
 import 'package:flutter_demo/http/request_repository.dart';
+import 'package:flutter_demo/lanuage/localizations_delegate.dart';
 import 'package:get/get.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+
 
 /// @class : Injection
 /// @date : 2023-01-02 17:47
@@ -12,6 +13,6 @@ class Injection {
     // shared_preferences
     await Get.putAsync(() => SharedPreferences.getInstance());
     Get.lazyPut(() => RequestRepository());
-    S.delegate;
+
   }
 }
