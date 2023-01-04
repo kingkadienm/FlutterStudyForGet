@@ -3,9 +3,15 @@
 /// @name : wangzs
 /// @description :
 abstract class AppLanguageKey {
- late String loading ;
- late String title;
- late String changeLanguage;
- late String language_zh;
- late String language_en;
+  String get loading;
+
+  String get title;
+
+  String get changeLanguage;
+
+  String get language_zh;
+
+  String get language_en;
+
+  String get language_;
 }
