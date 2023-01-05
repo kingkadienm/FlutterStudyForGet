@@ -6,18 +6,21 @@ import 'package:flutter_demo/lanuage/language_key.dart';
 /// @description : 
 class AppLanguageZh implements AppLanguageKey{
   @override
-  String changeLanguage = '';
+  String get changeLanguage => '切换语言';
 
   @override
-  String language_en = '';
+  String get language_en => '英文';
 
   @override
-  String language_zh = '';
+  String get language_zh => '简体中文';
 
   @override
-  String loading = '';
+  String get loading => '加载中';
 
   @override
-  String title = '';
+  String get title => '标题';
+
+  @override
+   String get language_ => '测试';
   
 }

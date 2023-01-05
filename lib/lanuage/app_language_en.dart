@@ -7,17 +7,20 @@ import 'package:get/get.dart';
 /// @description :
 class AppLanguageEn implements AppLanguageKey {
   @override
-  String changeLanguage = '';
+  String get changeLanguage => 'Change Language';
 
   @override
-  String language_en ='';
+  String get language_en =>'English';
 
   @override
-  String language_zh = '';
+  String get language_zh => 'Simplified Chinese';
 
   @override
-  String loading = '';
+  String get loading => 'Loading';
 
   @override
-  String title = '';
+  String get title => 'Title';
+
+  @override
+  String get language_ =>'test';
 }
