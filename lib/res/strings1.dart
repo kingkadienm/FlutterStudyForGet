@@ -1,4 +1,4 @@
-class Strings{
+class Strings {
   /// 单例对象
   static Strings? _instance;
 
@@ -15,4 +15,5 @@ class Strings{
     return _instance;
   }
 
+  String appName = 'appName';
 }

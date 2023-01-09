@@ -1,18 +1,23 @@
-class Strings{
+import 'strings1.dart';
+
+class R {
   /// 单例对象
-  static Strings? _instance;
+  static R? _instance;
 
   /// 内部构造方法，可避免外部暴露构造函数，进行实例化
-  Strings._internal();
+  R._internal();
 
   /// 工厂构造方法，这里使用命名构造函数方式进行声明
-  factory Strings.getInstance() => _getInstance();
+  factory R.getInstance() => _getInstance();
 
   /// 获取单例内部方法
   static _getInstance() {
     // 只能有一个实例
-    _instance ??= Strings._internal();
+    _instance ??= R._internal();
     return _instance;
   }
 
+  Strings strings() {
+    return Strings.getInstance();
+  }
 }
