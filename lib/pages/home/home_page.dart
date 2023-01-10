@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_demo/base/get_common_view.dart';
 import 'package:flutter_demo/pages/home/home_controller.dart';
+import 'package:flutter_demo/res/r.dart';
 import 'package:get/get.dart';
 
 /// @class : home_page
@@ -21,12 +22,13 @@ class HomePage extends GetCommonView<HomeController> {
         ),
         body: Column(
           children: <Widget>[
-            Text('1'),
+            Text(R.getInstance().String().loading.tr),
             Text('1'),
             FloatingActionButton(
-                onPressed: () {},
-                child: Text('1', style: Theme.of(context).textTheme.bodyText1)),
-            FloatingActionButton(onPressed: () {}, child: Text('2')),
+                onPressed: () {
+                  Get.updateLocale(Locale('zh', 'CN'));
+                },
+                child: Text('2')),
             FloatingActionButton(onPressed: () {}, child: Text('3')),
             FloatingActionButton(onPressed: () {}, child: Text('4')),
             Expanded(

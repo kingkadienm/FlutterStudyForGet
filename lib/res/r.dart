@@ -1,4 +1,6 @@
 import 'strings.dart';
+
+///  Generated file. Do not edit
 class R{
   /// 单例对象
   static R? _instance;
@@ -16,7 +18,7 @@ class R{
     return _instance;
   }
 
-  Strings strings() {
+  Strings String() {
     return Strings.getInstance();
   }
   
