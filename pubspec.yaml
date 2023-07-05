@@ -38,7 +38,7 @@ dependencies:
   # rxdart https://pub.flutter-io.cn/packages/rxdart
   rxdart: ^0.27.1
   #GetX状态管理框架 https://pub.flutter-io.cn/packages/get
-  get: 4.3.7
+  get: ^4.6.5
   #toast https://pub.flutter-io.cn/packages/fluttertoast
   fluttertoast: ^8.0.8
   # 网络请求库 https://github.com/flutterchina/dio
@@ -75,6 +75,13 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.5
+
+  flutter_plugin_android_lifecycle: ^2.0.15
+
+  flutter_boost:
+    git:
+      url: 'https://github.com/alibaba/flutter_boost.git'
+      ref: '4.3.0'
 
 dev_dependencies:
   flutter_test:

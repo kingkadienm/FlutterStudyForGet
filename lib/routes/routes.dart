@@ -1,3 +1,5 @@
+import 'package:flutter_demo/pages/android/android_bindings.dart';
+import 'package:flutter_demo/pages/android/to_android_view.dart';
 import 'package:flutter_demo/pages/home/home_binding.dart';
 import 'package:flutter_demo/pages/home/home_page.dart';
 import 'package:flutter_demo/pages/login/login_binding.dart';
@@ -24,6 +26,8 @@ class Routes {
 
   ///主页
   static const String homePage = '/home';
+  ///android 原生
+  static const String androidPage = '/android';
 
   ///页面合集
   static final routePage = [
@@ -43,5 +47,9 @@ class Routes {
         name: homePage,
         page: () =>   HomePage(),
         binding: HomeBinding()),
+    GetPage(
+        name: androidPage,
+        page: () =>   ToAndroidView(),
+        binding: AndroidBindings()),
   ];
 }
