@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart' hide Page;
 import 'package:flutter/material.dart' hide Page;
 import 'package:flutter_demo/pages/splash/splash_binding.dart';
 import 'package:flutter_demo/pages/splash/splash_page.dart';
+import 'package:flutter_demo/res/strings.dart';
 import 'package:flutter_demo/routes/routes.dart';
 import 'package:flutter_demo/utils/injection_init.dart';
 import 'package:flutter_demo/utils/keyboard_util.dart';
@@ -31,13 +32,13 @@ void main() async {
     // theme: appThemeData,
 
     ///国际化支持-来源配置
-    // translations: Messages(),
+    translations: Message(),
 
     ///国际化支持-默认语言
     // locale: LocaleOptions.getDefault(),
 
     ///国际化支持-备用语言
-    // fallbackLocale: const Locale('en', 'US'),
+    fallbackLocale: const Locale('en', 'US'),
 
     defaultTransition: Transition.fade,
     initialBinding: SplashBinding(),
